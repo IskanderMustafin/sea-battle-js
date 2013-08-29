@@ -5,7 +5,7 @@
 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <link rel="stylesheet" type="text/css" href="stylesheet/main.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet/layout.css" />
 
     <script src="scripts/external/jquery-1.6.4.min.js"></script>
    <!-- <script src="scripts/external/jquery-ui-1.10.3.zip.crdownload"></script>-->
@@ -17,13 +17,17 @@
 <body>
 
     <div id="header">
-        <div id="user_info"></div>
+        <span id="user_info">Имя игрока: </span>
+    </div>
+
+    <div id="battle_field">
+
     </div>
 
     <script>
         jQuery(function($) {
-            var userName = prompt('Вветиде имя игрока: ');
-            $('#user_info').text('Имя игрока ' + userName);
+            var userName = prompt('Введите имя игрока: ');
+            $('#user_info').append(userName);
 
         });
     </script>
