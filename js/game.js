@@ -61,12 +61,17 @@
             $(this.gameStatusContainer).text("Ваш ход");
         },
 
+
+        /**
+         * Инициализирует массив позиций по которым будет стрелять компьютер
+         */
         initBotShootingPositions: function() {
             for (var i = 0; i < this.fieldWidth; i++) {
                 for (var j = 0; j < this.fieldHeight; j++) {
                     this.botShootingPositions.push(new SeaBattle.Position(i, j));
                 }
             }
+            // перемешиваем
             shuffleArray(this.botShootingPositions);
 
             function shuffleArray(o) { // взято отсюда: http://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array-in-javascript
