@@ -1,28 +1,66 @@
-.body {
 
-    width: 100%;
+body {
+    background-image: url(../img/background.jpg);
+    color: #262825;
 }
 #header {
-    background: #b3dced; /* Old browsers */
-    background: -moz-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b3dced), color-stop(50%,#29b8e5), color-stop(100%,#bce0ee)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */
     width: 100%;
     height: 3em;
+
 }
 
 #user_info {
     font-size: 1.3em;
-    color: #0d29e5;
 }
 
-.username_box {
+#arena_container {
+    font-size: 1.1em;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#game_status {
+    text-align: center;
+}
+
+.field_container {
+    margin: 0 auto;
+    float: right;
+    padding: 2em;
+}
+
+
+#input_username_box {
     display: table;
     margin: 0 auto;
     border: inset #9a9ca3;
     padding: 1em;
+}
+
+.field {
+
+}
+
+
+.field td {
+    background-size: contain;
+    border: solid black 1px;
+    height: 1em;
+    width: 1em;
+}
+
+.fired_cell {
+    background-color: #9a9ca3;
+}
+
+.live_ship {
+    background-color: #44b827;
+}
+
+.damaged_ship {
+    background-color: #b89b00;
+}
+
+.died_ship {
+    background-color: #b82100;
 }
